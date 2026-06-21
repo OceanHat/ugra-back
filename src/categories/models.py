@@ -15,6 +15,7 @@ class Category(Base):
     name = Column(String(255), nullable=False, unique=True)
     slug = Column(String(255), unique=True, nullable=False, index=True)
     description = Column(Text, nullable=True)
+    image_url = Column(String(500), nullable=True)
     is_hidden = Column(Boolean, default=False)
     
     # Relationships
